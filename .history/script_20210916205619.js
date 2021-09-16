@@ -9,7 +9,7 @@ $(document).ready(function() {
         var pressedButton = $(this); //sugeba atskirti elementa kuris yra paspaustas
         
         $(".sort-heading").removeClass("arrow-active");
-        //document.querySelector(".sort-heading").classList.remove("arrow-active")
+//document.querySelector(".sort-heading").classList.remove("arrow-active")
 
 
         pressedButton.addClass("arrow-active");
