@@ -19,6 +19,8 @@
 
 ?>
 
+<table class="table table-striped">
+
 <?php 
             
             $sql = "SELECT knygos.ID, knygos.pavadinimas, knygos.santrauka, autoriai.vardas, autoriai.pavarde FROM `knygos` 
@@ -40,3 +42,5 @@
             }
             
 ?>
+
+</table>

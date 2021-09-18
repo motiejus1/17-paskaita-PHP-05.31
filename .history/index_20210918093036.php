@@ -10,11 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>17 paskaita</title>
     <?php require_once("includes.php"); ?>
-    <style>
-        .arrow-active {
-            color: red;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
@@ -43,27 +38,26 @@
                         <i class="fa fa-arrow-down sort-heading" id="asc-autoriai-pavarde"></i>
                     </th>
                 </tr>
-                <tbody id="result">
-                    <?php 
-                    
-                    $sql = "SELECT knygos.ID, knygos.pavadinimas, knygos.santrauka, autoriai.vardas, autoriai.pavarde FROM `knygos` 
-                    LEFT JOIN autoriai ON knygos.autoriai_id = autoriai.ID
-                    WHERE 1";
+                
+                <?php 
+                
+                $sql = "SELECT knygos.ID, knygos.pavadinimas, knygos.santrauka, autoriai.vardas, autoriai.pavarde FROM `knygos` 
+                LEFT JOIN autoriai ON knygos.autoriai_id = autoriai.ID
+                WHERE 1";
 
-                    $result = $conn->query($sql);
+                $result = $conn->query($sql);
 
-                    while($books = mysqli_fetch_array($result)) {
-                        echo "<tr>";
-                        echo "<td>". $books["ID"]."</td>";
-                        echo "<td>". $books["pavadinimas"]."</td>";
-                        echo "<td>". $books["santrauka"]."</td>";
-                        echo "<td>". $books["vardas"]."</td>";
-                        echo "<td>". $books["pavarde"]."</td>";
-                        echo "</tr>";
-                    }
-                    
-                    ?>
-                </tbody>    
+                while($books = mysqli_fetch_array($result)) {
+                    echo "<tr>";
+                    echo "<td>". $books["ID"]."</td>";
+                    echo "<td>". $books["pavadinimas"]."</td>";
+                    echo "<td>". $books["santrauka"]."</td>";
+                    echo "<td>". $books["vardas"]."</td>";
+                    echo "<td>". $books["pavarde"]."</td>";
+                    echo "</tr>";
+                }
+                
+                ?>
             </table>
         
     </div>

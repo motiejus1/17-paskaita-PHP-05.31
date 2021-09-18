@@ -10,11 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>17 paskaita</title>
     <?php require_once("includes.php"); ?>
-    <style>
-        .arrow-active {
-            color: red;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
