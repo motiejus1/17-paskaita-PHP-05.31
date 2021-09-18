@@ -15,13 +15,7 @@
             color: red;
         }
 
-        .sort-heading {
-            cursor:pointer;
-        }
-
-        .sort-heading:hover {
-            color: red;
-        }
+        .sort-heading
     </style>
 </head>
 <body>

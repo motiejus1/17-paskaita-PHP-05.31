@@ -18,10 +18,6 @@
         .sort-heading {
             cursor:pointer;
         }
-
-        .sort-heading:hover {
-            color: red;
-        }
     </style>
 </head>
 <body>

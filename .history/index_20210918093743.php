@@ -19,9 +19,7 @@
             cursor:pointer;
         }
 
-        .sort-heading:hover {
-            color: red;
-        }
+        .sort-heading:hover 
     </style>
 </head>
 <body>

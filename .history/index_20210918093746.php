@@ -20,7 +20,7 @@
         }
 
         .sort-heading:hover {
-            color: red;
+            
         }
     </style>
 </head>
